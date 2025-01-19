@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="hr" class="no-js">
 <head>
-    
     <!-- Script anti-clickjacking -->
-  <script>
-    if (window.top !== window.self) {
-  window.top.location.href = window.self.location.href;
-}
-  </script>
-    
-   <meta name="google-adsense-account" content="ca-pub-1318316674011684">
+    <script>
+        if (window.top !== window.self) {
+            window.top.location.href = window.self.location.href;
+        }
+    </script>
+
+    <meta name="google-adsense-account" content="ca-pub-1318316674011684">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,97 +21,96 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="favicon_optimized.png" type="image/png" sizes="16x16 32x32 48x48 64x64 128x128" crossorigin="anonymous" loading="lazy">
 
-<!-- Préchargement des liens Stripe pour les boutons CTA -->
+    <!-- Préchargement des liens Stripe pour les boutons CTA -->
     <link rel="prefetch" href="https://buy.stripe.com/14kdRe0EQ4iH1uoaFa">
     <link rel="prefetch" href="https://buy.stripe.com/dR614scnycPddd66oV">
     <link rel="prefetch" href="https://buy.stripe.com/28o3cA0EQ5mL0qk14C">
-    
-    <style>
-:root { --bg: #000; --text: #fff; --accent: #87CEEB; --button-bg: linear-gradient(145deg, #FFB6C1, #FF69B4); --button-txt: #fff; }
-body { font-family: 'Playfair Display', serif, Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); text-align: center; }
-header { padding: 2rem 0; background: #111; }
-h1 { font-family: 'Cinzel', serif; font-size: 2.2em; font-weight: 400; color: #fff; }
-.cta-button { display: inline-block; padding: 1rem 1.5rem; font-size: 1.4em; color: var(--button-txt); background: var(--button-bg); text-decoration: none; border-radius: 5px; transition: all .3s ease; }
-.cta-button:hover { transform: scale(1.02); opacity: .95; }
-.tarifs h2 { font-size: 1.8em; color: var(--accent); }
-.tarifs ul { list-style: none; padding: 0; font-size: 1.1em; }
-footer { margin-top: 2rem; font-size: .9em; color: #aaa; }
-footer a { color: inherit; text-decoration: none; }
-main { display: flex; flex-direction: column; gap: 1.5rem; align-items: center; justify-content: center; padding: 1rem; } 
-@media (min-width: 768px) { main { flex-direction: row; flex-wrap: wrap; } }
-p, blockquote { max-width: 60ch; margin: 0 auto; }
-blockquote { font-style: italic; }
-.avis { margin: 1rem 0; }
-.logo { max-width: 100%; height: auto; width: 450px; margin: 0 auto; display: block; }
-.cta-button:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,255,255,0.5); }
-/* Style pour les avis */ .playfair-display { font-family: 'Playfair Display', serif; font-style: italic; line-height: 1.8; font-size: 1.2em; color: #fff; text-align: justify; margin: 1.5rem 0; }
-@media (prefers-reduced-motion: reduce) {
-  .scintillant {
-    animation: none;
-    border: 1px solid red; /* Bordure pour voir les dimensions */
-    margin-top: 30px !important;
-    background: linear-gradient(90deg, #fff 20%, transparent 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-    </style>
-    
-    <style>
-    @keyframes etoiles {
-      0% {
-        background-position: 200%;
-      }
-      80% {
-        background-position: -200%;
-      }
-      100% {
-        background-position: -200%; /* Pause ici */
-      }
-    }
 
-    .scintillant {
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.5em;
-      text-align: center;
-      position: relative;
-      display: inline-block;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-      background-size: 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: etoiles 5s ease-in-out infinite; /* Durée ajustée avec pause */
-    }
+    <style>
+        :root { --bg: #000; --text: #fff; --accent: #87CEEB; --button-bg: linear-gradient(145deg, #FFB6C1, #FF69B4); --button-txt: #fff; }
+        body { font-family: 'Playfair Display', serif, Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); text-align: center; }
+        header { padding: 2rem 0; background: #111; }
+        h1 { font-family: 'Cinzel', serif; font-size: 2.2em; font-weight: 400; color: #fff; }
+        .cta-button { display: inline-block; padding: 1rem 1.5rem; font-size: 1.4em; color: var(--button-txt); background: var(--button-bg); text-decoration: none; border-radius: 5px; transition: all .3s ease; }
+        .cta-button:hover { transform: scale(1.02); opacity: .95; }
+        .tarifs h2 { font-size: 1.8em; color: var(--accent); }
+        .tarifs ul { list-style: none; padding: 0; font-size: 1.1em; }
+        footer { margin-top: 2rem; font-size: .9em; color: #aaa; }
+        footer a { color: inherit; text-decoration: none; }
+        main { display: flex; flex-direction: column; gap: 1.5rem; align-items: center; justify-content: center; padding: 1rem; } 
+        @media (min-width: 768px) { main { flex-direction: row; flex-wrap: wrap; } }
+        p, blockquote { max-width: 60ch; margin: 0 auto; }
+        blockquote { font-style: italic; }
+        .avis { margin: 1rem 0; }
+        .logo { max-width: 100%; height: auto; width: 450px; margin: 0 auto; display: block; }
+        .cta-button:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,255,255,0.5); }
+        /* Style pour les avis */ .playfair-display { font-family: 'Playfair Display', serif; font-style: italic; line-height: 1.8; font-size: 1.2em; color: #fff; text-align: justify; margin: 1.5rem 0; }
+        @media (prefers-reduced-motion: reduce) {
+            .scintillant {
+                animation: none;
+                border: 1px solid red; /* Bordure pour voir les dimensions */
+                margin-top: 30px !important;
+                background: linear-gradient(90deg, #fff 20%, transparent 80%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     </style>
 
-<style>
-  @font-face {
-      font-family: 'Cinzel';
-      src: url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/Cinzel-Regular.woff2') format('woff2'),
-           url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/Cinzel-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-  }
+    <style>
+        @keyframes etoiles {
+            0% {
+                background-position: 200%;
+            }
+            80% {
+                background-position: -200%;
+            }
+            100% {
+                background-position: -200%; /* Pause ici */
+            }
+        }
 
-  @font-face {
-      font-family: 'Playfair Display';
-      src: url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/PlayfairDisplay-Regular.woff2') format('woff2'),
-           url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/PlayfairDisplay-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-  }
+        .scintillant {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: etoiles 5s ease-in-out infinite; /* Durée ajustée avec pause */
+        }
+    </style>
 
-  /* Application des polices */
-  body {
-      font-family: 'Cinzel', serif;
-  }
+    <style>
+        @font-face {
+            font-family: 'Cinzel';
+            src: url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/Cinzel-Regular.woff2') format('woff2'),
+                 url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/Cinzel-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
 
-  h1, h2 {
-      font-family: 'Playfair Display', serif;
-  }
-</style>
+        @font-face {
+            font-family: 'Playfair Display';
+            src: url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/PlayfairDisplay-Regular.woff2') format('woff2'),
+                 url('https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/PlayfairDisplay-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
 
+        /* Application des polices */
+        body {
+            font-family: 'Cinzel', serif;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 
     <link rel="preload" as="image" href="https://i.imgur.com/GmyGlKk.webp" type="image/webp" imagesizes="450px">
     <meta name="theme-color" content="#000">
@@ -125,80 +123,79 @@ blockquote { font-style: italic; }
     <meta name="voice-search-enabled" content="true">
 </head>
 
-    
 <!-- Balise Google Ads Universelle avec Remarketing et Suivi des Conversions -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
 <script>
-  (function() {
-    // Fonction pour initialiser Google Ads avec des paramètres dynamiques
-    const initGoogleAds = ({
-      conversionId,
-      conversionLabel = null,
-      transactionValue = null,
-      currency = 'EUR'
-    }) => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    (function() {
+        // Fonction pour initialiser Google Ads avec des paramètres dynamiques
+        const initGoogleAds = ({
+            conversionId,
+            conversionLabel = null,
+            transactionValue = null,
+            currency = 'EUR'
+        }) => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-      // Configuration de base pour Google Ads
-      gtag('config', `AW-${conversionId}`);
+            // Configuration de base pour Google Ads
+            gtag('config', `AW-${conversionId}`);
 
-      // Ajout de Remarketing (par défaut sur chaque page)
-      gtag('event', 'page_view', {
-        'send_to': `AW-${conversionId}`
-      });
+            // Ajout de Remarketing (par défaut sur chaque page)
+            gtag('event', 'page_view', {
+                'send_to': `AW-${conversionId}`
+            });
 
-      // Suivi des conversions (si conversionLabel et transactionValue sont fournis)
-      if (conversionLabel && transactionValue !== null) {
-        gtag('event', 'conversion', {
-          'send_to': `AW-${conversionId}/${conversionLabel}`,
-          'value': transactionValue,
-          'currency': currency
-        });
-      }
-    };
+            // Suivi des conversions (si conversionLabel et transactionValue sont fournis)
+            if (conversionLabel && transactionValue !== null) {
+                gtag('event', 'conversion', {
+                    'send_to': `AW-${conversionId}/${conversionLabel}`,
+                    'value': transactionValue,
+                    'currency': currency
+                });
+            }
+        };
 
-    // Exemple d'utilisation : Remplacez par votre CONVERSION_ID
-    const googleAdsConfig = {
-      conversionId: 'AW-00000000000', // Remplacer par votre ID Google Ads
-      conversionLabel: 'CONVERSION_LABEL_OPTIONNEL', // Facultatif
-      transactionValue: 0 // Remplacer par la valeur transactionnelle si disponible
-    };
-    initGoogleAds(googleAdsConfig);
-  })();
+        // Exemple d'utilisation : Remplacez par votre CONVERSION_ID
+        const googleAdsConfig = {
+            conversionId: 'AW-00000000000', // Remplacer par votre ID Google Ads
+            conversionLabel: 'CONVERSION_LABEL_OPTIONNEL', // Facultatif
+            transactionValue: 0 // Remplacer par la valeur transactionnelle si disponible
+        };
+        initGoogleAds(googleAdsConfig);
+    })();
 </script>
 
 <!-- Script Asynchrone pour Remarketing -->
 <script>
-  (function() {
-    const conversionId = 'AW-00000000000'; // Remplacez par votre Conversion ID
+    (function() {
+        const conversionId = 'AW-00000000000'; // Remplacez par votre Conversion ID
 
-    var script = document.createElement('script');
-    script.src = `https://www.googleadservices.com/pagead/conversion_async.js?id=${conversionId}`;
-    script.async = true;
-    document.head.appendChild(script);
+        var script = document.createElement('script');
+        script.src = `https://www.googleadservices.com/pagead/conversion_async.js?id=${conversionId}`;
+        script.async = true;
+        document.head.appendChild(script);
 
-    script.onload = function() {
-      // Paramètres de remarketing
-      var google_trackConversion = {
-        google_conversion_id: conversionId,
-        google_custom_params: window.google_tag_params || {},
-        google_remarketing_only: true
-      };
-    };
-  })();
+        script.onload = function() {
+            // Paramètres de remarketing
+            var google_trackConversion = {
+                google_conversion_id: conversionId,
+                google_custom_params: window.google_tag_params || {},
+                google_remarketing_only: true
+            };
+        };
+    })();
 </script>
 
 <!-- Balise de Sécurité (NoScript) pour Remarketing Google Ads -->
 <noscript>
-  <div style="display:inline;">
-    <img height="1" width="1" style="border-style:none;" alt=""
-    src="https://www.googleadservices.com/pagead/conversion/CONVERSION_ID/?value=0&currency_code=EUR&label=CONVERSION_LABEL_OPTIONNEL&guid=ON&script=0">
-  </div>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+        src="https://www.googleadservices.com/pagead/conversion/CONVERSION_ID/?value=0&currency_code=EUR&label=CONVERSION_LABEL_OPTIONNEL&guid=ON&script=0">
+    </div>
 </noscript>
-    
-      <!-- Google Tag Manager -->
+
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -206,406 +203,382 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-P3J6SXCH');</script>
 <!-- End Google Tag Manager -->
 
-    
-    <!-- Google Analytics 4  -->
+<!-- Google Analytics 4  -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKJZC3Y5GS"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  // Configuration de Google Analytics 4 avec suivi multi-domaines
-  gtag('config', 'G-SKJZC3Y5GS', {
-    'send_page_view': true, // Active l'envoi des pages vues par défaut
-    'linker': {
-      'domains': ['site1.com', 'site2.com', 'site3.com'] // Remplacez par vos domaines
-    }
-  });
+    // Configuration de Google Analytics 4 avec suivi multi-domaines
+    gtag('config', 'G-SKJZC3Y5GS', {
+        'send_page_view': true, // Active l'envoi des pages vues par défaut
+        'linker': {
+            'domains': ['site1.com', 'site2.com', 'site3.com'] // Remplacez par vos domaines
+        }
+    });
 </script>
 
-    
-    <!-- Données structurées BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Početna",
-                "item": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
-                "image": "https://i.imgur.com/GmyGlKk.jpg"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Videnje putem E-pošte",
-                "item": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
+<!-- Données structurées BreadcrumbList -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Početna",
+            "item": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
+            "image": "https://i.imgur.com/GmyGlKk.jpg"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Videnje putem E-pošte",
+            "item": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
+            "image": "https://i.imgur.com/GmyGlKk.jpg"
+        }
+    ]
+}
+</script>
+
+<!-- JSON-LD pour SEO -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}
+</script>
+
+<!-- JSON-LD pour FAQ -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Tražim pouzdano i brzo videnje putem e-pošte, kako se odvija konzultacija s Frederickom iz kabineta ClairvoyanceMedium?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ako tražite pouzdano i brzo videnje putem e-pošte, Frederick iz kabineta ClairvoyanceMedium nudi jednostavnu i diskretnu konzultaciju. Ispunite sigurnosni obrazac na stranici ClairvoyanceMedium.com postavljajući svoja pitanja. Frederick analizira vašu situaciju svojim darom i 25 godina iskustva, zatim vam šalje detaljan i personaliziran odgovor putem e-pošte u roku od 24 sata. Ova metoda pruža vam dragocjene uvide u vašu ljubavnu, profesionalnu, financijsku ili obiteljsku budućnost, gdje god da se nalazite.",
                 "image": "https://i.imgur.com/GmyGlKk.jpg"
             }
-        ]
-    }
-    </script>
-
-    <!-- JSON-LD pour SEO -->
-    <script type="application/ld+json">
+        },
         {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/?q={search_term_string}",
-                "query-input": "required name=search_term_string"
+            "@type": "Question",
+            "name": "Koja su najrelevantnija pitanja za postaviti za videnje putem e-pošte o ljubavi i vezama s Frederickom iz kabineta ClairvoyanceMedium?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Za videnje putem e-pošte usmjereno na ljubav i veze s Frederickom iz kabineta ClairvoyanceMedium, dajte prednost otvorenim i preciznim pitanjima. Na primjer: 'Koje su perspektive razvoja moje trenutne veze?', 'Hoću li upoznati nekoga značajnog u sljedećih nekoliko mjeseci?', 'Kako mogu prevladati emocionalne blokade koje me sprječavaju da pronađem ljubav?'. Izbjegavajte previše zatvorena pitanja (da/ne) kako biste dobili bogatije odgovore i personalizirane savjete od Fredericka.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kako mogu znati je li videnje putem e-pošte koje nudi kabinet ClairvoyanceMedium s Frederickom stvarno pouzdano i ozbiljno?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kako biste bili sigurni u pouzdanost videnja putem e-pošte koje nudi kabinet ClairvoyanceMedium s Frederickom, potražite dokaze o iskustvu vidovnjaka (Frederick ima više od 25 godina prakse), provjerene recenzije klijenata (više od 300 recenzija za Fredericka na ClairvoyanceMedium.com) i pristup koji poštuje povjerljivost. Ozbiljan vidovnjak vam nikada neće obećati dobitak na lutriji ili rješenje svih vaših problema u trenu. Frederick iz kabineta ClairvoyanceMedium stavlja svoju stručnost i etiku u službu vašeg vođenja.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Želim jeftino videnje putem e-pošte za prvu konzultaciju na ClairvoyanceMedium.com s Frederickom, koje su cijene ponuđene?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Frederick iz kabineta ClairvoyanceMedium nudi konzultacije videnja putem e-pošte dostupne već od 6€ za jedno precizno pitanje, što je idealno za prvu konzultaciju. Dostupni su i povoljniji paketi za 3 i 5 pitanja, što vam omogućuje istraživanje više aspekata vašeg života po povlaštenoj cijeni. Pogledajte stranicu s cijenama na ClairvoyanceMedium.com za više detalja.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"  
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Trebam brz odgovor, koliko je vrijeme čekanja za videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Frederick iz kabineta ClairvoyanceMedium razumije važnost brzog odgovora. Obvezuje se da će vam pružiti detaljan odgovor na vašu konzultaciju videnja putem e-pošte u roku od najviše 24 sata od primitka vašeg zahtjeva. Dobit ćete personaliziranu e-poštu s objašnjenjima koja su vam potrebna.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kako funkcionira sigurno plaćanje za konzultaciju videnja putem e-pošte na stranici ClairvoyanceMedium.com s Frederickom?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kako biste osigurali sigurnost vaših transakcija, plaćanja za konzultacije videnja putem e-pošte na ClairvoyanceMedium.com s Frederickom u potpunosti su osigurana putem platforme Stripe, svjetskog lidera u online plaćanjima. Tako možete platiti svoju konzultaciju kreditnom karticom s punim povjerenjem.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Hoće li moja konzultacija videnja putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium ostati povjerljiva i privatna?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Povjerljivost je od najveće važnosti za Fredericka iz kabineta ClairvoyanceMedium. Vaša konzultacija videnja putem e-pošte obrađuje se s najvećom diskrecijom. Sve informacije koje pružite i razmjena e-pošte šifrirani su i ostaju strogo povjerljivi. Vaši osobni podaci nikada se ne otkrivaju trećim stranama.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Tražim vidovnjaka putem e-pošte s dugogodišnjim iskustvom, kakva je stručnost Fredericka iz kabineta ClairvoyanceMedium?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Frederick iz kabineta ClairvoyanceMedium stavlja na vašu uslugu više od 25 godina iskustva kao duhovni vodič i praktičar videnja, uključujući putem e-pošte. Njegova priznata stručnost omogućuje mu da nudi precizne, empatične i prosvjetljujuće konzultacije, temeljene na njegovom daru i dubokom razumijevanju ljudskih izazova. Njegove brojne recenzije klijenata svjedoče o njegovoj ozbiljnosti i profesionalnosti.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kako najbolje protumačiti predviđanja koja ću dobiti tijekom mog videnja putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Predviđanja koja ćete dobiti tijekom vašeg videnja putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium su uvidi u trendove i mogućnosti koje su vam dostupne. Važno je da ih smatrate savjetima i vodičima, a ne sudbinom. Vaša slobodna volja ostaje ključna. Ova predviđanja pomažu vam da donesete informirane odluke i da napredujete mirno na svom životnom putu.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Gdje mogu pogledati recenzije i svjedočanstva drugih ljudi koji su konzultirali Fredericka iz kabineta ClairvoyanceMedium putem videnja putem e-pošte?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Da biste pročitali recenzije i svjedočanstva drugih ljudi koji su koristili konzultacije videnja putem e-pošte Fredericka iz kabineta ClairvoyanceMedium, možete posjetiti našu stranicu posvećenu svjedočanstvima [link na vašu stranicu s recenzijama] ili platforme s provjerenim recenzijama [linkovi na platforme]. Ova autentična svjedočanstva pružit će vam konkretan uvid u kvalitetu i ozbiljnost ponuđenih konzultacija.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Postavljam pitanja o svojoj profesionalnoj budućnosti, može li mi videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium pomoći da vidim jasnije?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apsolutno. Videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium može vam pružiti dragocjene uvide u vašu profesionalnu budućnost. Možete postavljati pitanja o svojoj karijeri, mogućnostima zapošljavanja, nadolazećim promjenama ili blokadama koje vas sprječavaju da postignete svoje ciljeve. Frederick će analizirati vašu situaciju i ponuditi vam personalizirane savjete kako bi vas usmjerio prema uspjehu.",
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Što točno uključuje konzultacija videnja putem e-pošte s kabinetom ClairvoyanceMedium i koje su prednosti u odnosu na druge oblike videnja?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium nudi diskretnu, fleksibilnu i pristupačnu divinacijsku konzultaciju, omogućujući duboku refleksiju, povijest razmjene i dostupnost 24/7 za pouzdano videnje putem dopisivanja.", 
+                "image": "https://i.imgur.com/GmyGlKk.jpg"
             }
         }
-    </script>
+    ]
+}
+</script>
 
-    <!-- JSON-LD pour FAQ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Tražim pouzdano i brzo videnje putem e-pošte, kako se odvija konzultacija s Frederickom iz kabineta ClairvoyanceMedium?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ako tražite pouzdano i brzo videnje putem e-pošte, Frederick iz kabineta ClairvoyanceMedium nudi jednostavnu i diskretnu konzultaciju. Ispunite sigurnosni obrazac na stranici ClairvoyanceMedium.com postavljajući svoja pitanja. Frederick analizira vašu situaciju svojim darom i 25 godina iskustva, zatim vam šalje detaljan i personaliziran odgovor putem e-pošte u roku od 24 sata. Ova metoda pruža vam dragocjene uvide u vašu ljubavnu, profesionalnu, financijsku ili obiteljsku budućnost, gdje god da se nalazite.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Koja su najrelevantnija pitanja za postaviti za videnje putem e-pošte o ljubavi i vezama s Frederickom iz kabineta ClairvoyanceMedium?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Za videnje putem e-pošte usmjereno na ljubav i veze s Frederickom iz kabineta ClairvoyanceMedium, dajte prednost otvorenim i preciznim pitanjima. Na primjer: 'Koje su perspektive razvoja moje trenutne veze?', 'Hoću li upoznati nekoga značajnog u sljedećih nekoliko mjeseci?', 'Kako mogu prevladati emocionalne blokade koje me sprječavaju da pronađem ljubav?'. Izbjegavajte previše zatvorena pitanja (da/ne) kako biste dobili bogatije odgovore i personalizirane savjete od Fredericka.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kako mogu znati je li videnje putem e-pošte koje nudi kabinet ClairvoyanceMedium s Frederickom stvarno pouzdano i ozbiljno?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kako biste bili sigurni u pouzdanost videnja putem e-pošte koje nudi kabinet ClairvoyanceMedium s Frederickom, potražite dokaze o iskustvu vidovnjaka (Frederick ima više od 25 godina prakse), provjerene recenzije klijenata (više od 300 recenzija za Fredericka na ClairvoyanceMedium.com) i pristup koji poštuje povjerljivost. Ozbiljan vidovnjak vam nikada neće obećati dobitak na lutriji ili rješenje svih vaših problema u trenu. Frederick iz kabineta ClairvoyanceMedium stavlja svoju stručnost i etiku u službu vašeg vođenja.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Želim jeftino videnje putem e-pošte za prvu konzultaciju na ClairvoyanceMedium.com s Frederickom, koje su cijene ponuđene?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Frederick iz kabineta ClairvoyanceMedium nudi konzultacije videnja putem e-pošte dostupne već od 6€ za jedno precizno pitanje, što je idealno za prvu konzultaciju. Dostupni su i povoljniji paketi za 3 i 5 pitanja, što vam omogućuje istraživanje više aspekata vašeg života po povlaštenoj cijeni. Pogledajte stranicu s cijenama na ClairvoyanceMedium.com za više detalja.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"  
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Trebam brz odgovor, koliko je vrijeme čekanja za videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Frederick iz kabineta ClairvoyanceMedium razumije važnost brzog odgovora. Obvezuje se da će vam pružiti detaljan odgovor na vašu konzultaciju videnja putem e-pošte u roku od najviše 24 sata od primitka vašeg zahtjeva. Dobit ćete personaliziranu e-poštu s objašnjenjima koja su vam potrebna.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kako funkcionira sigurno plaćanje za konzultaciju videnja putem e-pošte na stranici ClairvoyanceMedium.com s Frederickom?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kako biste osigurali sigurnost vaših transakcija, plaćanja za konzultacije videnja putem e-pošte na ClairvoyanceMedium.com s Frederickom u potpunosti su osigurana putem platforme Stripe, svjetskog lidera u online plaćanjima. Tako možete platiti svoju konzultaciju kreditnom karticom s punim povjerenjem.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Hoće li moja konzultacija videnja putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium ostati povjerljiva i privatna?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Povjerljivost je od najveće važnosti za Fredericka iz kabineta ClairvoyanceMedium. Vaša konzultacija videnja putem e-pošte obrađuje se s najvećom diskrecijom. Sve informacije koje pružite i razmjena e-pošte šifrirani su i ostaju strogo povjerljivi. Vaši osobni podaci nikada se ne otkrivaju trećim stranama.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Tražim vidovnjaka putem e-pošte s dugogodišnjim iskustvom, kakva je stručnost Fredericka iz kabineta ClairvoyanceMedium?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Frederick iz kabineta ClairvoyanceMedium stavlja na vašu uslugu više od 25 godina iskustva kao duhovni vodič i praktičar videnja, uključujući putem e-pošte. Njegova priznata stručnost omogućuje mu da nudi precizne, empatične i prosvjetljujuće konzultacije, temeljene na njegovom daru i dubokom razumijevanju ljudskih izazova. Njegove brojne recenzije klijenata svjedoče o njegovoj ozbiljnosti i profesionalnosti.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kako najbolje protumačiti predviđanja koja ću dobiti tijekom mog videnja putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Predviđanja koja ćete dobiti tijekom vašeg videnja putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium su uvidi u trendove i mogućnosti koje su vam dostupne. Važno je da ih smatrate savjetima i vodičima, a ne sudbinom. Vaša slobodna volja ostaje ključna. Ova predviđanja pomažu vam da donesete informirane odluke i da napredujete mirno na svom životnom putu.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Gdje mogu pogledati recenzije i svjedočanstva drugih ljudi koji su konzultirali Fredericka iz kabineta ClairvoyanceMedium putem videnja putem e-pošte?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da biste pročitali recenzije i svjedočanstva drugih ljudi koji su koristili konzultacije videnja putem e-pošte Fredericka iz kabineta ClairvoyanceMedium, možete posjetiti našu stranicu posvećenu svjedočanstvima [link na vašu stranicu s recenzijama] ili platforme s provjerenim recenzijama [linkovi na platforme]. Ova autentična svjedočanstva pružit će vam konkretan uvid u kvalitetu i ozbiljnost ponuđenih konzultacija.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Postavljam pitanja o svojoj profesionalnoj budućnosti, može li mi videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium pomoći da vidim jasnije?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Apsolutno. Videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium može vam pružiti dragocjene uvide u vašu profesionalnu budućnost. Možete postavljati pitanja o svojoj karijeri, mogućnostima zapošljavanja, nadolazećim promjenama ili blokadama koje vas sprječavaju da postignete svoje ciljeve. Frederick će analizirati vašu situaciju i ponuditi vam personalizirane savjete kako bi vas usmjerio prema uspjehu.",
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Što točno uključuje konzultacija videnja putem e-pošte s kabinetom ClairvoyanceMedium i koje su prednosti u odnosu na druge oblike videnja?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Videnje putem e-pošte s Frederickom iz kabineta ClairvoyanceMedium nudi diskretnu, fleksibilnu i pristupačnu divinacijsku konzultaciju, omogućujući duboku refleksiju, povijest razmjene i dostupnost 24/7 za pouzdano videnje putem dopisivanja.", 
-            "image": "https://i.imgur.com/GmyGlKk.jpg"
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- JSON-LD pour Person -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Frederick",
-      "description": "Duhovni vodič i profesionalni vidovnjak koji nudi pouzdane i brze konzultacije putem e-pošte.",
-      "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
-      "sameAs": [
+<!-- JSON-LD pour Person -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Frederick",
+    "description": "Duhovni vodič i profesionalni vidovnjak koji nudi pouzdane i brze konzultacije putem e-pošte.",
+    "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
+    "sameAs": [
         "https://facebook.com/clairvoyancemedium",
         "https://twitter.com/clairvoyancemedium",
         "https://linkedin.com/in/clairvoyancemedium"
-      ],
-      "worksFor": {
+    ],
+    "worksFor": {
         "@type": "Organization",
         "name": "ClairvoyanceMedium.com",
         "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/"
-      }
     }
-    </script>
+}
+</script>
 
-    <!-- JSON-LD pour Product -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Konzultacija videnja putem E-pošte",
-        "description": "Videnje putem e-pošte 24h/7d s Frederickom. Pitanja od 6€.",
-        "image": "https://clairvoyancemedium.github.io/images/voyance.jpg",
-        "brand": {
-            "@type": "Brand",
-            "name": "ClairvoyanceMedium.com"
+<!-- JSON-LD pour Product -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Konzultacija videnja putem E-pošte",
+    "description": "Videnje putem e-pošte 24h/7d s Frederickom. Pitanja od 6€.",
+    "image": "https://clairvoyancemedium.github.io/images/voyance.jpg",
+    "brand": {
+        "@type": "Brand",
+        "name": "ClairvoyanceMedium.com"
+    },
+    "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "6",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2065-12-31",  // Datum važenja cijene
+        "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/",
+        "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0.00",
+                "currency": "EUR"
+            },
+            "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 0,
+                    "unitCode": "HUR"  // Heure
+                },
+                "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 0,
+                    "unitCode": "HUR"  // Heure
+                }
+            },
+            "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "HR"
+            }
         },
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "EUR",
-            "price": "6",
-            "availability": "https://schema.org/InStock",
-            "priceValidUntil": "2065-12-31",  // Datum važenja cijene
-            "url": "https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/"
+        "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/NoReturnsAccepted"
         }
-    }
-    </script>
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "300"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Ivana"
+            },
+            "datePublished": "2024-12-25",
+            "reviewBody": "Bila sam skeptična na početku, ali Frederick me uvjerio već u prvom e-mailu. Njegova precizna i detaljna analiza mog ljubavnog i profesionalnog života oduševila me. U roku od 5 sati imala sam jasne odgovore i korisne savjete kako dalje. Iskustvo videnja putem e-pošte brzo, pouzdano i 100% personalizirano. Preporučujem svima koji traže kvalitetno duhovno vođenje!",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            }
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Marko"
+            },
+            "datePublished": "2024-12-20",
+            "reviewBody": "Frederick je pretvorio moje sumnje u sigurnost zahvaljujući iznimnoj konzultaciji videnja putem e-pošte. Njegova predviđanja o mojoj obiteljskoj i profesionalnoj budućnosti pokazala su se točnima i puna mudrosti. S njegovim iskustvom, zna umiriti i voditi s nevjerojatnom jasnoćom. Jeftina online konzultacija, kvalitetna, brza, i posebno vrlo učinkovita. Hvala ti puno Frederick!",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            }
+        }
+    ]
+}
+</script>
 
-    <!-- Unique balise Speakable -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "speakable": {
+<!-- Unique balise Speakable -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [
-          "h1",
-          "p.url-text",
-          ".cta-button",
-          ".tarifs ul",
-          "blockquote",
-          "p",
-          "footer"
+            "h1",
+            "p.url-text",
+            ".cta-button",
+            ".tarifs ul",
+            "blockquote",
+            "p",
+            "footer"
         ]
-      },
-      "inLanguage": ["hr-HR", "en-US", "es-ES", "pt-BR", "zh-CN", "hi-IN", "ar-SA", "ru-RU", "it-IT", "de-DE", "ja-JP", "ko-KR", "vi-VN", "tr-TR", "pl-PL", "nl-NL", "id-ID", "th-TH", "ms-MY", "fa-IR", "uk-UA", "ro-RO", "hu-HU", "sv-SE", "fi-FI", "no-NO", "cs-CZ", "da-DK", "el-GR", "bg-BG", "he-IL", "lt-LT", "lv-LV", "sk-SK", "hr-HR", "sr-RS", "sl-SI", "et-EE", "sq-AL", "az-AZ", "ka-GE", "bn-BD", "ta-IN"]
-    }
-    </script>
+    },
+    "inLanguage": ["hr-HR", "en-US", "es-ES", "pt-BR", "zh-CN", "hi-IN", "ar-SA", "ru-RU", "it-IT", "de-DE", "ja-JP", "ko-KR", "vi-VN", "tr-TR", "pl-PL", "nl-NL", "id-ID", "th-TH", "ms-MY", "fa-IR", "uk-UA", "ro-RO", "hu-HU", "sv-SE", "fi-FI", "no-NO", "cs-CZ", "da-DK", "el-GR", "bg-BG", "he-IL", "lt-LT", "lv-LV", "sk-SK", "hr-HR", "sr-RS", "sl-SI", "et-EE", "sq-AL", "az-AZ", "ka-GE", "bn-BD", "ta-IN"]
+}
+</script>
 
-    <!-- Autres balises meta et liens pour temoignage client -->
-    <script type="application/ld+json">
+<!-- Autres balises meta et liens pour temoignage client -->
+<script type="application/ld+json">
+[
     {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Konzultacija videnja putem E-pošte",
-        "description": "Videnje putem e-pošte 24h/7d s Frederickom. Pitanja od 6€.",
-        "image": "https://clairvoyancemedium.github.io/images/voyance.jpg",
-        "brand": {
-            "@type": "Brand",
+        "@type": "Offer",
+        "name": "1 Pitanje",
+        "description": "Konzultacija videnja putem e-pošte za 1 pitanje. Brz i pouzdan odgovor.",
+        "price": "6.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/14kdRe0EQ4iH1uoaFa",
+        "priceValidUntil": "2059-12-31",
+        "seller": {
+            "@type": "Organization",
             "name": "ClairvoyanceMedium.com"
-        },
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "EUR",
-            "price": "6",
-            "availability": "https://schema.org/InStock",
-            "priceValidUntil": "2095-12-31",
-            "url": "https://clairvoyancemedium.github.io",
-            "shippingDetails": {
-                "@type": "OfferShippingDetails",
-                "shippingRate": {
-                    "@type": "MonetaryAmount",
-                    "value": "0.00",
-                    "currency": "EUR"
-                },
-                "deliveryTime": {
-                    "@type": "ShippingDeliveryTime",
-                    "handlingTime": {
-                        "@type": "QuantitativeValue",
-                        "minValue": 0,
-                        "maxValue": 0,
-                        "unitCode": "HUR"
-                    },
-                    "transitTime": {
-                        "@type": "QuantitativeValue",
-                        "minValue": 0,
-                        "maxValue": 0,
-                        "unitCode": "HUR"
-                    }
-                },
-                "shippingDestination": {
-                    "@type": "DefinedRegion",
-                    "addressCountry": "HR"
-                }
-            },
-            "hasMerchantReturnPolicy": {
-                "@type": "MerchantReturnPolicy",
-                "returnPolicyCategory": "https://schema.org/NoReturnsAccepted"
-            }
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "300"
-        },
-        "review": [
-            {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Ivana"
-                },
-                "datePublished": "2024-12-25",
-                "reviewBody": "Bila sam skeptična na početku, ali Frederick me uvjerio već u prvom e-mailu. Njegova precizna i detaljna analiza mog ljubavnog i profesionalnog života oduševila me. U roku od 5 sati imala sam jasne odgovore i korisne savjete kako dalje. Iskustvo videnja putem e-pošte brzo, pouzdano i 100% personalizirano. Preporučujem svima koji traže kvalitetno duhovno vođenje!",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                }
-            },
-            {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Marko"
-                },
-                "datePublished": "2024-12-20",
-                "reviewBody": "Frederick je pretvorio moje sumnje u sigurnost zahvaljujući iznimnoj konzultaciji videnja putem e-pošte. Njegova predviđanja o mojoj obiteljskoj i profesionalnoj budućnosti pokazala su se točnima i puna mudrosti. S njegovim iskustvom, zna umiriti i voditi s nevjerojatnom jasnoćom. Jeftina online konzultacija, kvalitetna, brza, i posebno vrlo učinkovita. Hvala ti puno Frederick!",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                }
-            }
-        ]
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        "name": "3 Pitanja",
+        "description": "Konzultacija videnja putem e-pošte za 3 pitanja. Brz i pouzdan odgovor.",
+        "price": "15.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/dR614scnycPddd66oV",
+        "priceValidUntil": "2059-12-31",
+        "seller": {
+            "@type": "Organization",
+            "name": "ClairvoyanceMedium.com"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        "name": "5 Pitanja",
+        "description": "Konzultacija videnja putem e-pošte za 5 pitanja. Brz i pouzdan odgovor.",
+        "price": "28.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/28o3cA0EQ5mL0qk14C",
+        "priceValidUntil": "2059-12-31",
+        "seller": {
+            "@type": "Organization",
+            "name": "ClairvoyanceMedium.com"
+        }
     }
-    </script>
-
- <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Offer",
-    "name": "1 Pitanje",
-    "description": "Konzultacija videnja putem e-pošte za 1 pitanje. Brz i pouzdan odgovor.",
-    "price": "6.00",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://buy.stripe.com/14kdRe0EQ4iH1uoaFa",
-    "priceValidUntil": "2059-12-31",
-    "seller": {
-      "@type": "Organization",
-      "name": "ClairvoyanceMedium.com"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Offer",
-    "name": "3 Pitanja",
-    "description": "Konzultacija videnja putem e-pošte za 3 pitanja. Brz i pouzdan odgovor.",
-    "price": "15.00",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://buy.stripe.com/dR614scnycPddd66oV",
-    "priceValidUntil": "2059-12-31",
-    "seller": {
-      "@type": "Organization",
-      "name": "ClairvoyanceMedium.com"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Offer",
-    "name": "5 Pitanja",
-    "description": "Konzultacija videnja putem e-pošte za 5 pitanja. Brz i pouzdan odgovor.",
-    "price": "28.00",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://buy.stripe.com/28o3cA0EQ5mL0qk14C",
-    "priceValidUntil": "2059-12-31",
-    "seller": {
-      "@type": "Organization",
-      "name": "ClairvoyanceMedium.com"
-    }
-  }
 ]
 </script>
-   
-    <meta property="og:title" content="Videnje putem E-pošte s Frederickom - Pouzdane i Brze Konzultacije">
-    <meta property="og:description" content="Konzultirajte Fredericka, iskusnog duhovnog vodiča, za jasne i precizne odgovore putem e-pošte. Pouzdano i brzo videnje, dostupno 24h/7d.">
-    <meta property="og:url" content="https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="hr_HR">
-    <meta property="og:image" content="https://github.com/ClairVoyanceMedium/Frederick_Guidance.github.io/raw/main/Images/1%20-%20logo%20officiel(grande%20taille).jpg">
-    <meta property="og:image:alt" content="Logo ClairVoyanceMedium, predstavlja eleganciju i mudrost moderne vidovitosti.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Videnje putem E-pošte s Frederickom">
-    <meta name="twitter:description" content="Konzultirajte Fredericka za pouzdano i precizno videnje putem e-pošte.">
-    <meta name="twitter:image" content="https://i.imgur.com/GmyGlKk.jpg">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://js.stripe.com 'nonce-RANDOM_NONCE' 'strict-dynamic'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' https://i.imgur.com data:; frame-src https://js.stripe.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://region2.google-analytics.com https://api.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests; report-uri https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/csp-report-endpoint;">
 
-    <script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'hr',
-            includedLanguages: 'en,es,zh-CN,hi,ar,pt,ru,ja,de,ko,vi,it,tr,pl,uk,nl,th,fr,sv,cs,el,da,fi,he,hu,id,ms,no,ro,sk,sl,et,ta,te,sw,zu,fa,lo,my,ne,xh,yo',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
-    </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+<meta property="og:title" content="Videnje putem E-pošte s Frederickom - Pouzdane i Brze Konzultacije">
+<meta property="og:description" content="Konzultirajte Fredericka, iskusnog duhovnog vodiča, za jasne i precizne odgovore putem e-pošte. Pouzdano i brzo videnje, dostupno 24h/7d.">
+<meta property="og:url" content="https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="hr_HR">
+<meta property="og:image" content="https://github.com/ClairVoyanceMedium/Frederick_Guidance.github.io/raw/main/Images/1%20-%20logo%20officiel(grande%20taille).jpg">
+<meta property="og:image:alt" content="Logo ClairVoyanceMedium, predstavlja eleganciju i mudrost moderne vidovitosti.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Videnje putem E-pošte s Frederickom">
+<meta name="twitter:description" content="Konzultirajte Fredericka za pouzdano i precizno videnje putem e-pošte.">
+<meta name="twitter:image" content="https://i.imgur.com/GmyGlKk.jpg">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://js.stripe.com 'nonce-RANDOM_NONCE' 'strict-dynamic'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' https://i.imgur.com data:; frame-src https://js.stripe.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://region2.google-analytics.com https://api.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests; report-uri https://clairvoyancemedium.github.io/Videnje-putem-e-poste-za-sva-podrucja-brzo-i-pouzdano.github.io/csp-report-endpoint;">
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'hr',
+        includedLanguages: 'en,es,zh-CN,hi,ar,pt,ru,ja,de,ko,vi,it,tr,pl,uk,nl,th,fr,sv,cs,el,da,fi,he,hu,id,ms,no,ro,sk,sl,et,ta,te,sw,zu,fa,lo,my,ne,xh,yo',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 
 </head>
 
